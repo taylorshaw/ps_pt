@@ -1,10 +1,10 @@
-exec_name = 'ppm'
+exec_name = 'pathtracer'
 source_files = Glob('*.cc') # ['ppm.cc']
 lib_path = ''
 cpp_path = '.'
 
 Program(exec_name, source_files, CPPPATH = cpp_path, LIBPATH = lib_path)
-Decider('MD5-timestamp')
+#Decider('MD5-timestamp')
 
 
 #env = Environment()

@@ -1,0 +1,7 @@
+Stuff I'd change in a facier implementation
+
+- separate types for vec3, color, mat etc
+- write to files other than ppm
+- ppm writer as a separate class
+- in ray class 'a' and 'b' are not very clear
+- do a real spherical environment
