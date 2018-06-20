@@ -5,3 +5,4 @@ Stuff I'd change in a facier implementation
 - ppm writer as a separate class
 - in ray class 'a' and 'b' are not very clear
 - do a real spherical environment
+- should delay normal calculation
