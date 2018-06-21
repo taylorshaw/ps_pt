@@ -4,7 +4,7 @@
 #include "ray.h"
 
 struct hit_record {
-    float t; // double?
+    vec_type t; // double?
     vec3 p;
     vec3 normal;
 };
@@ -12,7 +12,7 @@ struct hit_record {
 
 class hitable {
  public:
-    virtual bool hit(const ray& r, float t_min, float t_max, hit_record& rec) const = 0;
+    virtual bool hit(const ray& r, vec_type t_min, vec_type t_max, hit_record& rec) const = 0;
 
 };
 

@@ -8,6 +8,11 @@ Stuff I'd change in a facier implementation
 - do a real spherical environment
 - should delay normal calculation
 - hitable_list should have a vector or something to allow adding/deleting, not just an array. also handle deletion correctly
+- use <random> instead of drand48 ?
+- figure out why float version has a lot of dark bands. oh its just epsilon problem
+- interesting he uses hit epsilon of just 0.001
+- gamma correction of 2 is a bit weird
+
 
 i like passing t_min and t_max to the ray hit function.. can skip calculations
 if its obvious object is outside of range
