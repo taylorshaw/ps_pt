@@ -6,3 +6,8 @@ Stuff I'd change in a facier implementation
 - in ray class 'a' and 'b' are not very clear
 - do a real spherical environment
 - should delay normal calculation
+- hitable_list should have a vector or something to allow adding/deleting, not just an array. also handle deletion correctly
+
+i like passing t_min and t_max to the ray hit function.. can skip calculations
+if its obvious object is outside of range
+
