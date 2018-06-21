@@ -13,7 +13,7 @@ class camera {
         origin = vec3(0.0, 0.0, 0.0);
     }
 
-    ray get_ray( vec_type u, vec_type v ) {
+    ray get_ray( float u, float v ) {
         return ray(origin, lower_left_corner + u*horizontal + v*vertical - origin);
     }
 

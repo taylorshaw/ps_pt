@@ -13,6 +13,7 @@ Stuff I'd change in a facier implementation
 - interesting he uses hit epsilon of just 0.001
 - gamma correction of 2 is a bit weird
 
+- try to understand the diaelectric scatter function more, and how refract works
 
 i like passing t_min and t_max to the ray hit function.. can skip calculations
 if its obvious object is outside of range
