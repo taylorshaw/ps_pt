@@ -33,7 +33,7 @@ vec3 color( const ray& r, hitable* world, int depth) {
 
 
 int main(){
-    int scale = 4;
+    int scale = 8;
     int nx = 160 * scale;
     int ny = 80 * scale;
     int ns = 100;
@@ -51,8 +51,16 @@ int main(){
     
     hitable * world = new hitable_list(list, 5);
 
-    camera cam(vec3(-2,2,1), vec3(0,0,-1), vec3(0,1,0),
-               30, float(nx)/float(ny));
+    vec3 lookfrom(3,3,2);
+    vec3 lookat(0,0,-1);
+    vec3 vup(0,1,0);
+    float vfov = 20;
+    
+    float dist_to_focus = (lookfrom-lookat).length();
+    float aperture = 1.0;
+    
+    camera cam(lookfrom, lookat, vup,
+               vfov, float(nx)/float(ny), aperture, dist_to_focus);
     
     for (int j = ny-1; j >= 0; j--){
         for(int i = 0; i < nx; i++){
